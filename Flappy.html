@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Original Flappy Bird -JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <style>        
+        canvas{
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #home a{
+            text-decoration: none;
+            color: whitesmoke;
+            background: transparent;
+            position: absolute;
+            border: 2px solid white;
+            left: 22px;
+            top: 22px;
+            font-size: 39px;
+            font-weight: bolder;
+            font-style: oblique;
+            border-radius: 19px;
+            padding: 10px 12px;
+            margin: 2px 2px;
+            cursor: pointer;
+        }
+        
+        #home a:hover{
+            background: white;
+            color: #184e77;
+            border: 2px solid #184e77;
+            
+        }
+
+        .body{
+            background: url("../img/flappy.png");
+            min-height: 97vh;
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+    <button id="home"><a href="/Index.html">Home</a></button>
+    <canvas id="bird" width="320" height="480"></canvas>
+    </div>
+    <script src="flappygame.js"></script>
+</body>
+</html>
